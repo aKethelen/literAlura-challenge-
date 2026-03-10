@@ -12,11 +12,11 @@
 
 </div>
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 O **LiterAlura** é uma aplicação de console desenvolvida para o desafio da formação Java da **Alura** em parceria com o **Oracle Next Education (ONE)**. O sistema consome a API [Gutendex](https://gutendex.com/) para buscar informações de livros de domínio público e os armazena em um banco de dados **PostgreSQL**.
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 O sistema permite realizar as seguintes operações:
 1. **Buscar livros pelo título**: Consulta a API externa e salva no banco de dados local.
@@ -25,7 +25,7 @@ O sistema permite realizar as seguintes operações:
 4. **Listar autores vivos em determinado ano**: Filtra autores com base em datas históricas.
 5. **Listar livros por idioma**: Filtro por siglas (ex: PT, EN, FR).
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Java 17**
 - **Spring Boot 3.4.3**
@@ -34,13 +34,23 @@ O sistema permite realizar as seguintes operações:
 - **Jackson** (Tratamento de JSON)
 - **Dotenv** (Segurança de variáveis de ambiente)
 
-## 🚀 Como Executar
+## Como Executar
 
 ### 1. Pré-requisitos
 - Ter o JDK 17 instalado.
 - Ter o PostgreSQL configurado.
 
-### 2. Configuração de Segurança
+### 2. Instalação e Execução
+Clonar Repositório
+Bash
+git clone https://github.com/aKethelen/literAlura-challenge-.git
+cd literAlura-challenge-
+Compilar e Rodar (Via Terminal)
+Bash
+./mvnw clean install
+./mvnw spring-boot:run
+
+### 3. Configuração de Segurança
 Este projeto utiliza variáveis de ambiente para proteger dados sensíveis. 
 - Crie um arquivo chamado `.env` na raiz do projeto.
 - Use o arquivo `.env.example` como base e preencha com as suas credenciais locais:
