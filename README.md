@@ -16,6 +16,13 @@
 
 O **LiterAlura** é uma aplicação de console desenvolvida para o desafio da formação Java da **Alura** em parceria com o **Oracle Next Education (ONE)**. O sistema consome a API [Gutendex](https://gutendex.com/) para buscar informações de livros de domínio público e os armazena em um banco de dados **PostgreSQL**.
 
+## Desenvolvedora
+- **Kethelen De Azevedo**
+- Estudante de Ciência da Computação
+
+## Licença
+Este projeto está sob a **Licença MIT**.
+
 ## Funcionalidades
 
 O sistema permite realizar as seguintes operações:
@@ -50,7 +57,32 @@ Bash
 ./mvnw clean install
 ./mvnw spring-boot:run
 
-### 3. Configuração de Segurança
+### 3. Instalação e Execução
+No terminal, executa os seguintes comandos:
+
+Bash
+# Clonar o repositório
+git clone [https://github.com/aKethelen/literAlura-challenge-.git](https://github.com/aKethelen/literAlura-challenge-.git)
+
+# Aceder à pasta do projeto
+cd literAlura-challenge-
+
+# Compilar e correr a aplicação
+./mvnw clean install
+./mvnw spring-boot:run
+
+### 4. Uso da Interface CLI
+Ao iniciar a aplicação, utiliza os inputs numéricos no terminal para navegar:
+
+Plaintext
+1 - Procurar livro pelo título
+2 - Listar livros registados
+3 - Listar autores registados
+4 - Listar autores vivos num determinado ano
+5 - Listar livros num determinado idioma
+0 - Sair
+
+### 5. Configuração de Segurança
 Este projeto utiliza variáveis de ambiente para proteger dados sensíveis. 
 - Crie um arquivo chamado `.env` na raiz do projeto.
 - Use o arquivo `.env.example` como base e preencha com as suas credenciais locais:
@@ -59,3 +91,12 @@ Este projeto utiliza variáveis de ambiente para proteger dados sensíveis.
 DB_URL=jdbc:postgresql://localhost:5432/literalura_db
 DB_USERNAME=seu_usuario
 DB_PASSWORD=sua_senha
+
+
+Desenvolvedora
+Kethelen De Azevedo
+
+Estudante de Ciência da Computação
+
+Licença
+Este projeto está sob a Licença MIT.
